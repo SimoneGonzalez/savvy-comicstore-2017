@@ -4,8 +4,6 @@ html {
 
 /* Put all style below this line*/
 
-<<<<<<< HEAD
-
 .container{
   text-align: center;
 }
@@ -18,19 +16,15 @@ html {
 .form-group{
   padding-left: 20px;
 }
-=======
-div.splashImage {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+
+
 
 	#tfheader{
-		background-color:#c3dfef;
+    float:right;
 	}
 	#tfnewsearch{
 		float:right;
-		padding:20px;
+		padding:10px;
 	}
 	.tftextinput2{
 		margin: 0;
@@ -53,9 +47,9 @@ div.splashImage {
 		text-align: center;
 		text-decoration: none;
 		color: #ffffff;
-		border: solid 1px #0076a3; border-right:0px;
-		background: #0095cd;
-		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		border: solid 1px #b0b0b0; border-right:0px;
+		background: #b0b0b0;
+		background: -webkit-gradient(linear, left top, left bottom, from(#B0B0B0), to(#616161));
 		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
 		border-top-right-radius: 5px 5px;
 		border-bottom-right-radius: 5px 5px;
@@ -63,7 +57,7 @@ div.splashImage {
 	.tfbutton2:hover {
 		text-decoration: none;
 		background: #007ead;
-		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#B0B0B0));
 		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
 	}
 	/* Fixes submit button height problem in Firefox */
@@ -73,10 +67,3 @@ div.splashImage {
 	.tfclear{
 		clear:both;
 	}
-
-  .center-block {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
->>>>>>> merged/master
