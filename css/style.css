@@ -4,6 +4,19 @@ html {
 
 /* Put all style below this line*/
 
+.container{
+  text-align: center;
+}
+
+#contact ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+.form-group{
+  padding-left: 20px;
+}
+
 
 
 	#tfheader{
