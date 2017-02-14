@@ -12,41 +12,55 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<title>Document</title>
+
+
+<title>Savvy Comics</title>
+
+
 </head>
 <body>
-<div class="container">
-  <div id="tfheader">
-    <form id="tfnewsearch" method="get" action="http://www.google.com">
-            <input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="1000" value="Search our website"><input type="submit" value=">" class="tfbutton2">
-    </form>
-    <div class="tfclear"></div>
-  </div>
-
-  <div class="center-block">
-    <h1>Savvy Comics Store</hr>
-    <img src="https://cdn.pixabay.com/photo/2016/01/16/17/45/folders-1143684_960_720.jpg" class="img-responsive" alt="Responsive image">
-  </div>
-  <div class="wrapper">
-    <header>
-      <ul class="navBar">
-        <li class="navItem" href="#">Home</li>
-        <li class="navItem" href="#">Store</li>
-        <li class="navItem" href="#">Blog</li>
-        <li class="navItem" href="#">About Us</li>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Savvy Comics</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/store">Store</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contact">About Us</a></li>
       </ul>
-    </header>
-    <div class="container"></div>
-
+      <div id="tfheader">
+        <form id="tfnewsearch" method="get" action="http://www.google.com">
+                <input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="1000" value="Search our website"><input type="submit" value=">" class="tfbutton2">
+        </form>
+        <div class="tfclear"></div>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
   </div>
-  <footer>
-    <ul>
-      <li href="#">Contact</li>
-      <li href="#">Locations</li>
-      <li href="#">Terms of Use</li>
-      <li href="#">Copyright</li>
-    </ul>
-  </footer>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="jumbotron text-center">
+    <h1>Savvy Comics</h1>
+    <p>Online comic book and nerdy merchandise headquarters</p>
+    </div>
+  </div>
+
+
+
+
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script type="text/javascript" src="script.js"></script>
 </div>
