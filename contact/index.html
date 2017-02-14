@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>This is Us!</title>
+  <title>Contact Savvy Comics</title>
   <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 </head>
 <body>
@@ -17,41 +18,41 @@
   contact us!
   -->
 <div class="container">
- <img src="images/batman-richard.jpg" style="height:300px">
- <img src="file:///Users/genaserey/Desktop/SavvyCoders/savvy-comicstore-2017/contact/images/wonderwoman-rebecca.jpg" style="height:300px">
- <img src="file:///Users/genaserey/Desktop/SavvyCoders/savvy-comicstore-2017/contact/images/superman-wayne2.jpg" style="height:300px">
- <img src="file:///Users/genaserey/Desktop/SavvyCoders/savvy-comicstore-2017/contact/images/batwoman-gena.jpg" style="height:300px">
+ <img src="../images/batman-richard.jpg" style="height:300px">
+ <img src="../images/wonderwoman-rebecca.jpg" style="height:300px">
+ <img src="../images/superman-wayne2.jpg" style="height:300px">
+ <img src="..//images/batwoman-gena.jpg" style="height:300px">
 </div>
 
 <div class="container" id="contact">
- <h2>About Us</h2>
-  <p>Four friends came together, with one goal. To be the go-to source for all things pop culture, for you.</p>
-   <h3>Find Us</h3>
-    <ul>
+ <ul>
+  <h2>About Us</h2>
+   <p>Four friends came together, with one goal. To be the go-to source for all things pop culture, for you.</p>
+    <h3>Find Us</h3>
      <li>Hall of Justice</li>
      <li>(aka "The Refinery")</li>
      <li>438 Houston St</li>
      <li>Nashville, TN 37203</li>
      <li>615-000-0000</li>
-   </ul>
+     <li>Store hours: Monday-Saturday 10a-8p</li>
+     <li>Sunday 12p-6p</li>
+  </ul>
 </div>
 
-<div class="container">
-<form action="https://formspree.io/genaserey@gmail.com" method="POST">
-  <h3>Questions? Comments? We can help!</h3>
-    <input type="radio" name="subject" value="" checked><span>I want to sell stuff</span>
-    <input type="radio" name="subject" value="personal" checked><span>I need an item special ordered</span>
-    <input type="radio" name="subject" value="other" checked><span>Other</span>
-  </label><br>
-
-  <input type="text" name="name" placeholder="Your Name" size="30" autofocus>
-  <input type="email" name="userEmail" placeholder="your.email@example.com" required>
-
-  <textarea name="user_message" rows="8" cols="40"></textarea>
-  <input type="submit">
+<form role="form">
+  <div class="form-group">
+    <h4><i>Questions? Comments? We can help!</h4></i>
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your email" autofocus>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">Drop us a note!</label>
+    <textarea class="form-control" rows="3" placeholder="What can we help you with?"></textarea><br>
+    <button type="submit" class="btn btn-success btn-sm">Submit</button>
+  </div>
 </form>
-</div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
 </body>
 </html>

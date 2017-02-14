@@ -4,6 +4,21 @@ html {
 
 /* Put all style below this line*/
 
+<<<<<<< HEAD
+
+.container{
+  text-align: center;
+}
+
+#contact ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+.form-group{
+  padding-left: 20px;
+}
+=======
 div.splashImage {
   display: block;
   margin-left: auto;
@@ -64,3 +79,4 @@ div.splashImage {
     margin-left: auto;
     margin-right: auto;
   }
+>>>>>>> merged/master
