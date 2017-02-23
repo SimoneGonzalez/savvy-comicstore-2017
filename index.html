@@ -57,8 +57,23 @@
     </div>
   </div>
 
+<!--
+Create a <form> element that will allow a user to input a new book (eventually).
+Make sure that each field has a name attribute that's exactly the same as the
+ corresponding object property (you'll see why in a minute).
+-->
 
-
+<form role="form">
+  <div id="new-entry" class="form-group">
+    <label>Enter a New Book</label>
+    <input class="form-control" placeholder="Title">
+    <input class="form-control" placeholder="Author">
+    <input class="form-control" placeholder="Description">
+    <input class="form-control" placeholder="Price">
+    <br>
+    <button type="submit" class="btn btn-success btn-sm">Submit</button>
+  </div>
+</form>
 
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
