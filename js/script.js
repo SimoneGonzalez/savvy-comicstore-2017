@@ -1,6 +1,7 @@
 // Put all of your jQuery and JavaScript in this document.
 
 window.onload = function(){
+	console.log("helloworld");
 	//Get submit button
 	var submitbutton = document.getElementById("tfq");
 	//Add listener to submit button
@@ -23,8 +24,8 @@ var book1 = {
 		"selling-points": [
 				"Single issue comic book",
 				"#1",
-				"Featuring classic Todd McFarlane story and art",
-				]
+				"Featuring classic Todd McFarlane story and art"
+			],
 		"price": "$5.99"
 }
 var book2 = {
@@ -35,8 +36,8 @@ var book2 = {
 		"selling-points": [
 				"Single issue comic book",
 				"#2",
-				"Featuring classic Todd McFarlane story and art",
-				]
+				"Featuring classic Todd McFarlane story and art"
+			],
     "price": "$7.99"
 }
 var book3 = {
@@ -47,8 +48,8 @@ var book3 = {
 		"selling-points": [
 				"Single issue comic book",
 				"#3",
-				"Featuring classic Todd McFarlane story and art",
-				]
+				"Featuring classic Todd McFarlane story and art"
+			],
 		"price": "$6.99"
 }
 var book4 = {
@@ -59,8 +60,8 @@ var book4 = {
 		"selling-points": [
 				"Single issue comic book",
 				"#4",
-				"Featuring classic Todd McFarlane story and art",
-				]
+				"Featuring classic Todd McFarlane story and art"
+			],
 		"price": "$12.99"
 }
 var book5 = {
@@ -71,8 +72,8 @@ var book5 = {
 		"selling-points": [
 				"Single issue comic book",
 				"#5",
-				"Featuring classic Todd McFarlane story and art",
-				]
+				"Featuring classic Todd McFarlane story and art"
+			],
     "price": "$8.50"
 }
 var book6 = {
@@ -83,7 +84,39 @@ var book6 = {
 		"selling-points": [
 				"Single issue comic book",
 				"#6",
-				"Featuring classic Todd McFarlane story and art",
-				]
-    "price": "$16.25",
+				"Featuring classic Todd McFarlane story and art"
+			],
+    "price": "$16.25"
 }
+
+/*Gena's form stuff
+	The preventDefault() method cancels the event if it is cancelable, meaning that the
+	default action that belongs to the event will not occur.
+		For example, this can be useful when:
+		Clicking on a "Submit" button, prevent it from submitting a form
+		Clicking on a link, prevent the link from following the URL
+
+serializeArray= method creates an array of objects (name and value) by serializing
+form values. can select one or more form elements (like input and/or text area), or
+the form element itself.
+
+forEach = calls a function once for each element in an array, in order
+*/
+
+var count = 2;
+
+$("form").on("submit", function(event) {
+  event.preventDefault();
+  var data = $(this).serializeArray();
+  var formObject = {};
+  formObject.id = ++count;
+  data.forEach( function(field){
+  formObject[field.name] = field.value;
+});
+
+if(formObject.password === "banana"){
+    console.log(formObject);
+    } else {
+      alert( "Sorry, you didn't enter the correct password" );
+    }
+});
