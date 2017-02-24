@@ -73,3 +73,14 @@ var book6 = {
       ],
     "price": "$16.25"
 }
+
+
+var add_to_page = function(book) {
+	$('#' + book.id + ' .title').text(book.title);
+	$('#' + book.id + ' .author').text(book.author);
+	$('#' + book.id + ' .picture img').attr("src", book.picture);
+	$('#' + book.id + ' .selling-points').text(book["selling-points"]);
+	$('#' + book.id + ' .price').text(book.price);
+}
+
+add_to_page(book1);
