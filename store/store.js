@@ -84,3 +84,20 @@ var add_to_page = function(book) {
 }
 
 add_to_page(book1);
+
+//Rebecca's Loop//
+// loop over the selling_points array with .forEach().
+// Try using a loop within addToPage() to add selling_points to your page as an ordered list.
+// Put all of the selling points li’s into a variable, wayne can append to a list.
+//Keep in mind: a book object will be passed into the addToPage() function, which wayne is changing.
+//It will use append and contain full html strings.
+ //$contentNode.append($("<div class='selling-points'").html("<ol>" + sellingPointsListItems + "</ol>"));
+
+var sellingPointsListItems = "";
+var sellItems = book6['selling-points'];
+
+function sellPoints (point) {
+	sellingPointsListItems += "<li>" + point + "</li>";
+}
+sellItems.forEach(sellPoints);
+console.log(sellingPointsListItems);
